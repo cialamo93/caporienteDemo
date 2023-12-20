@@ -2529,14 +2529,14 @@ p {
 /*===== features TWO =====*/
 .features-area {
   background-color: #f4f6f7;
-  padding-top: 120px;
-  padding-bottom: 130px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
 .single-features {
   padding: 40px 20px 52px;
   background-color: #fff; }
   .single-features .features-title-icon .features-title a {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 45px;
     color: #121212;
     -webkit-transition: all 0.3s ease-out 0s;
@@ -2839,9 +2839,9 @@ p {
 ===========================*/
 /*===== TESTIMONIAL STYLE THREE =====*/
 .testimonial-area {
-  padding-top: 80px;
-  padding-bottom: 130px;
-  background-color: #f4f6f7; }
+  margin-top: 20px;
+  margin-bottom: 27rem;
+  background-color: #fff; }
   .testimonial-area .testimonial-left-content .sub-title {
     font-size: 18px;
     font-weight: 400;
@@ -2892,12 +2892,7 @@ p {
       position: absolute;
       top: 10px;
       left: 15px;
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg);
-      opacity: 0.1; }
+    }
       .testimonial-area .testimonial-right-content .quota i {
         font-size: 130px;
         line-height: 95px;
