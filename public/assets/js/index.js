@@ -53,4 +53,29 @@
         setTimeout(() => {
             renderCardPaymentBrick(bricksBuilder);
         }, 1500);
+
+
+        document.getElementById('sendContactMessage').addEventListener('click', async () => {
+          event.preventDefault();
+          let contactName = document.getElementById('contactName').value;
+          let contactEmail = document.getElementById('contactEmail').value;
+          let contactMessage = document.getElementById('contactMessage').value;
+  
+          let message = {
+              name: contactName,
+              email: contactEmail,
+              message: contactMessage,
+          };
+          
+          if (Object.values(message).every(val => val.length > 0)) {
+              
+              let sendMessage = await fetch("/sendMessage", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json", },
+                  body: JSON.stringify(message)
+                });
+  
+              let serverResponse = await sendMessage.json(); 
+          }
+      });
         

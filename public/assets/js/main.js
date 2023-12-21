@@ -68,6 +68,23 @@ $(function() {
     });
     
     
+    $('.container').imagesLoaded(function() {
+        var $grid = $('.grid').isotope({
+            transitionDuration: '1s'
+        });
+        $('.portfolio-menu ul').on('click', 'li', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        });
+        $('.portfolio-menu ul li').on('click', function(event) {
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            event.preventDefault();
+        });
+    });
+    
     
     //===== Back to top
     
@@ -91,21 +108,6 @@ $(function() {
     });
     
     
-    //===== 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    //=====   
     
 });
