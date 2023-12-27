@@ -38,11 +38,13 @@
                 let serverResponse = await paymentPending.json();
                 if (serverResponse === 'approved') {
                   document.getElementById("cardPaymentBrick_container").style.display = "none";
+                  document.getElementById("paymentValueForm").style.display = "none";
                   document.getElementById("successPaymentDiv").style.display = "block";
                 }
               },
               onError: (error) => {
                 document.getElementById("cardPaymentBrick_container").style.display = "none";
+                document.getElementById("paymentValueForm").style.display = "none";
                 document.getElementById("errorPaymentDiv").style.display = "block";
             },
             },

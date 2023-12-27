@@ -90,7 +90,7 @@
                         
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="solid" href="#payment">Reserva tu cupo</a></li>
+                                <li><a class="solid" href="#payment" type="button" data-toggle="modal" data-target="#paymentModal">Reserva tu cupo</a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->
@@ -202,7 +202,7 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <p class="text">Aca podría ir una foto, o puedo cambiar las posiciones de los elementos, o cambiar el formato. Tambien te recomiendo recortar un poco el texto de quienes somos (un poquito too much. Otsea perdoname, pero que queri que te diga...).</p>
+                        <!-- <p class="text">Aca podría ir una foto, o puedo cambiar las posiciones de los elementos, o cambiar el formato. Tambien te recomiendo recortar un poco el texto de quienes somos (un poquito too much. Otsea perdoname, pero que queri que te diga...).</p> -->
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -227,7 +227,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-10">
                         <h3 class="title">Servicios</h3>
-                        <p class="text">Nuestros servicios son variados y constan de lo siguiente (pon algo aca)</p>
+                        <!-- <p class="text">Nuestros servicios son variados y constan de lo siguiente (pon algo aca)</p> -->
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
@@ -289,7 +289,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-25">
                         <h3 class="title">Diferenciación</h3>
-                        <p class="text">Pon algo aca si quieres</p>
+                        <!-- <p class="text">Pon algo aca si quieres</p> -->
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -627,7 +627,7 @@
                 <div class="col-lg-6 col-md-10">
                     <div class="section-title text-center pb-30">
                         <h3 class="title">Contáctanos</h3>
-                        <p class="text">Aca tambien puedes poner algo si quieres</p>
+                        <!-- <p class="text">Aca tambien puedes poner algo si quieres</p> -->
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -723,7 +723,7 @@
 
     <!--====== CONTACT PART ENDS ======-->
 
-    <div class="container" id="payment">
+    <!-- <div class="container" id="payment">
         <div class="row">
             <div class="col-lg-6">
                 <h1>Reserva tu cupo (Esta parte la puedo eliminar y hacer que la pasarela de pagos aparezca en una ventana flotante si prefieres)</h1>
@@ -738,7 +738,37 @@
                 <div id="cardPaymentBrick_container"></div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="paymentModalLabel">Reserva tu cupo</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div id="paymentValueForm" class="form-group">
+                    <label for="paymentValueInput">Ingresa el valor a pagar</label>
+                    <input type="number" class="form-control" id="paymentValueInput" placeholder="Ingresa el valor a pagar">
+                </div>
+                <div id="successPaymentDiv" style="display: none;">
+                    <h3>Su pago fue exitoso. Hemos enviado un mail a XXXX@gmail.com con los detalles.</h3>
+                </div>
+                <div id="errorPaymentDiv" style="display: none;">
+                    <h3>Hubo un error con el pago. Ningún cobro fue hecho. Intentelo nuevamente</h3>
+                </div>
+                <div id="cardPaymentBrick_container"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <!--====== FOOTER PART START ======-->
@@ -748,20 +778,20 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="footer-logo text-center">
-                        <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a>
+                        <!-- <a class="mt-30" href="index.html"><img src="assets/images/logo.svg" alt="Logo"></a> -->
                     </div> <!-- footer logo -->
                     <ul class="social text-center mt-60">
-                        <li><a href="https://facebook.com/uideckHQ"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li><a href="https://twitter.com/uideckHQ"><i class="lni lni-twitter-original"></i></a></li>
-                        <li><a href="https://instagram.com/uideckHQ"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="https://facebook.com/"><i class="lni lni-facebook-filled"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="https://instagram.com/"><i class="lni lni-instagram-original"></i></a></li>
                         <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul> <!-- social -->
                     <div class="footer-support text-center">
-                        <span class="number">+8801234567890</span>
-                        <span class="mail">support@uideck.com</span>
+                        <span class="number">+56987759811</span>
+                        <span class="mail">contacto@caporiente.cl</span>
                     </div>
                     <div class="copyright text-center mt-35">
-                        <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a rel="nofollow" href="https://ayroui.com">Ayro UI</a> </p>
+                        <!-- <p class="text">Designed by <a href="https://uideck.com" rel="nofollow">UIdeck</a> and Built-with <a rel="nofollow" href="https://ayroui.com">Ayro UI</a> </p> -->
                     </div> <!--  copyright -->
                 </div>
             </div> <!-- row -->
