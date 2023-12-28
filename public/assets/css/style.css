@@ -2603,8 +2603,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  /* El curso era pointer pero el walo lo pidio default el 27-12 */
-  /* cursor: pointer; */
+  cursor: pointer;
   width: 100%;
   border-radius: 50px;
   overflow: hidden;
