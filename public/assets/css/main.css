@@ -1,0 +1,52 @@
+.nextTrip ul li {
+    font-size: 16px;
+    font-weight: 700;
+    color: #6c6c6c;
+    line-height: 48px;
+    padding: 0 30px;
+    position: relative;
+    z-index: 5;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    /* El curso era pointer pero el walo lo pidio default el 27-12 */
+    /* cursor: pointer; */
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-top: 4px;
+    text-transform: uppercase; }
+    .nextTrip ul li:last-child {
+      margin-right: 0; }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .nextTrip ul li {
+        font-size: 14px;
+        padding: 0 26px; } }
+    @media (max-width: 767px) {
+      .nextTrip ul li {
+        font-size: 14px;
+        padding: 0 22px;
+        line-height: 42px; } }
+    /* .nextTrip ul li::before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: -webkit-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+      background: -o-linear-gradient(left, #0067f4 0%, #2bdbdc 100%);
+      background: linear-gradient(to right, #0067f4 0%, #2bdbdc 100%);
+      z-index: -1;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+    .nextTrip ul li:hover, .nextTrip ul li.active {
+      color: #fff; }
+      .nextTrip ul li:hover::before, .nextTrip ul li.active::before {
+        opacity: 1; } */
