@@ -18,17 +18,17 @@
     overflow: hidden;
     margin-top: 4px;
     text-transform: uppercase; }
-    .nextTrip ul li:last-child {
-      margin-right: 0; }
-    @media only screen and (min-width: 768px) and (max-width: 991px) {
-      .nextTrip ul li {
-        font-size: 14px;
-        padding: 0 26px; } }
-    @media (max-width: 767px) {
-      .nextTrip ul li {
-        font-size: 14px;
-        padding: 0 22px;
-        line-height: 42px; } }
+.nextTrip ul li:last-child {
+  margin-right: 0; }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .nextTrip ul li {
+    font-size: 14px;
+    padding: 0 26px; } }
+@media (max-width: 767px) {
+  .nextTrip ul li {
+    font-size: 14px;
+    padding: 0 22px;
+    line-height: 42px; } }
     /* .nextTrip ul li::before {
       position: absolute;
       content: '';
@@ -50,3 +50,58 @@
       color: #fff; }
       .nextTrip ul li:hover::before, .nextTrip ul li.active::before {
         opacity: 1; } */
+.fixed-box {
+  position: fixed;
+  bottom: 55px; /* Distancia desde el borde inferior */
+  right: 10px; /* Distancia desde el borde derecho */
+  width: 150px; /* Ancho del cuadro */
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: white; /* Letra blanca */
+  padding: 10px;
+  text-align: center;
+  /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.fixed-box form {
+  display: flex;
+  flex-direction: column; /* Formulario en columna */
+}
+
+.fixed-box input[type="email"] {
+  padding: 8px;
+  margin-bottom: 10px; /* Espacio entre el input y el botón */
+  border: none;
+  border-radius: 4px;
+}
+
+.fixed-box button {
+  background-color: transparent;
+  /* color: white; */
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+}
+
+/* .fixed-box img {
+  max-width: 50%;
+} */
+
+@media (max-width: 767px) {
+  .fixed-box {
+      position: fixed;
+      bottom: 10px; /* Ajusta la distancia desde la parte inferior */
+      left: 10px; /* Ajusta la distancia desde el lado izquierdo */
+      width: calc(100% - 20px); /* Ancho total menos el espacio de margen */
+      background-color: rgba(0, 0, 0, 0.8); /* Color de fondo oscuro */
+      color: #fff; /* Texto blanco */
+      padding: 10px; /* Espaciado interno */
+  }
+}
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}

@@ -80,4 +80,9 @@
               let serverResponse = await sendMessage.json(); 
           }
       });
+
+      document.getElementById("closeButton").addEventListener("click", function() {
+        document.querySelector(".fixed-box").style.display = "none";
+      });
+      
         
