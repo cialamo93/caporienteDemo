@@ -92,11 +92,12 @@
   .fixed-box {
       position: fixed;
       bottom: 10px; /* Ajusta la distancia desde la parte inferior */
-      left: 10px; /* Ajusta la distancia desde el lado izquierdo */
-      width: calc(100% - 20px); /* Ancho total menos el espacio de margen */
+      right: 10px; /* Ajusta la distancia desde el lado izquierdo */
+      height: ;
+      width: calc(30% - 20px); /* Ancho total menos el espacio de margen */
       background-color: rgba(0, 0, 0, 0.8); /* Color de fondo oscuro */
       color: #fff; /* Texto blanco */
-      padding: 10px; /* Espaciado interno */
+      padding: 1px; /* Espaciado interno */
   }
 }
 .close-button {
@@ -104,4 +105,10 @@
   top: 5px;
   right: 5px;
   cursor: pointer;
+}
+
+.team-image img {
+  width: 100%; /* Establece el ancho al 100% del contenedor */
+  height: 400px; /* Establece una altura fija */
+  object-fit: cover; /* Ajusta la imagen manteniendo la relación de aspecto y cubriendo el contenedor */
 }

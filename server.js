@@ -3,10 +3,6 @@ const app = express();
 const http = require('http');
 const cors = require("cors");
 const { MercadoPagoConfig, Payment } = require('mercadopago');
-const sgMail = require('@sendgrid/mail');
-
-sgMail.setApiKey('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');
-
 const port = 4000;
 
 app.use(cors());
@@ -51,6 +47,8 @@ app.post('/process_payment', async (req, res) => {
     let paymentInfo = await meliPayment.create({
       body: req.body
     });
+    console.log(paymentInfo)
+    console.log(paymentInfo.status)
     res.json(paymentInfo.status)
   }
   catch (error) {
@@ -59,23 +57,6 @@ app.post('/process_payment', async (req, res) => {
   }
 });
 
-app.post('/sendMessage', async (req, res) => {
-  try {
-    const msg = {
-      to: 'calamo@alumnos.uai.cl',
-      from: 'support@zellero.com', // Change to your verified sender
-      subject: 'El contacto ' + req.body.email + ' te envío un mensaje a través de la página',
-      text: req.body.message,
-      html: req.body.message,
-    };
-    let messageSent = await sgMail.send(msg);
-    console.log(messageSent)
-  }
-  catch (error) {
-    console.log(error);
-    res.json("error");
-  }
-});
 
 
 })()

@@ -1,6 +1,7 @@
         const mp = new MercadoPago('TEST-085e5a8c-5bde-4e9f-b786-09fb68ee66dd', {
           locale: 'es-CL'
         });
+
         const bricksBuilder = mp.bricks();
         const renderCardPaymentBrick = async (bricksBuilder) => {
           const settings = {
@@ -27,8 +28,10 @@
                 // callback llamado cuando Brick esté listo
               },
               onSubmit: async (cardFormData) => {
+
+                cardFormData.transaction_amount = parseInt(document.getElementById("paymentValueInput").value);
                 
-                let paymentPending = await fetch("/process_payment", {
+                let paymentPending = await fetch("http://localhost:4000/process_payment", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -57,29 +60,29 @@
         }, 1500);
 
 
-        document.getElementById('sendContactMessage').addEventListener('click', async () => {
-          event.preventDefault();
-          let contactName = document.getElementById('contactName').value;
-          let contactEmail = document.getElementById('contactEmail').value;
-          let contactMessage = document.getElementById('contactMessage').value;
+      //   document.getElementById('sendContactMessage').addEventListener('click', async () => {
+      //     event.preventDefault();
+      //     let contactName = document.getElementById('contactName').value;
+      //     let contactEmail = document.getElementById('contactEmail').value;
+      //     let contactMessage = document.getElementById('contactMessage').value;
   
-          let message = {
-              name: contactName,
-              email: contactEmail,
-              message: contactMessage,
-          };
+      //     let message = {
+      //         name: contactName,
+      //         email: contactEmail,
+      //         message: contactMessage,
+      //     };
           
-          if (Object.values(message).every(val => val.length > 0)) {
+      //     if (Object.values(message).every(val => val.length > 0)) {
               
-              let sendMessage = await fetch("/sendMessage", {
-                  method: "POST",
-                  headers: { "Content-Type": "application/json", },
-                  body: JSON.stringify(message)
-                });
+      //         let sendMessage = await fetch("/sendMessage", {
+      //             method: "POST",
+      //             headers: { "Content-Type": "application/json", },
+      //             body: JSON.stringify(message)
+      //           });
   
-              let serverResponse = await sendMessage.json(); 
-          }
-      });
+      //         let serverResponse = await sendMessage.json(); 
+      //     }
+      // });
 
       document.getElementById("closeButton").addEventListener("click", function() {
         document.querySelector(".fixed-box").style.display = "none";
