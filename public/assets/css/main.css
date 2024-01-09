@@ -99,6 +99,9 @@
       color: #fff; /* Texto blanco */
       padding: 1px; /* Espaciado interno */
   }
+  .features-area {
+    margin-top: 25rem;
+  }
 }
 .close-button {
   position: absolute;
