@@ -140,10 +140,9 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
 
-                <div class="carousel-item">
+                <div class="carousel-item" id="secondCarousel">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -154,6 +153,16 @@
                                         <li><a class="main-btn rounded-one" href="#nextTrip">Saber Más</a></li>
                                     </ul>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                        <div class="slider-image" style="margin-left: 5rem;">
+                            <div>
+                                <video width="300" height="600" autoplay muted loop playsinline>
+                                <source src="assets/images/promoVid.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
                             </div>
                         </div>
                     </div>
@@ -192,8 +201,7 @@
                     <div class="testimonial-right-content mt-50">
                         <div class="quota">
                             <i class="lni lni-quotation"></i>
-                            <p class="text">En CAP Oriente somos líderes en importaciones y viajes comerciales a China, facilitando tanto el proceso de importación como la exploración de oportunidades de negocio en el mercado chino. Ofrecemos soluciones integrales y personalizadas para satisfacer las necesidades comerciales de nuestros clientes.
-                                Con una amplia experiencia, hemos perfeccionado el arte de las importaciones. Puedes confiar en nuestro conocimiento y compromiso para lograr una experiencia de importación fluida, rentable y educativa.</p>
+                            <p class="text">En CAP Oriente, no solo somos líderes en importaciones, sino tu socio estratégico para abrir las puertas del mercado chino. Nuestra especialidad va más allá de facilitar importaciones; nos destacamos por llevar a empresarios en viajes comerciales a China, conectándolos directamente con fabricantes y eliminando intermediarios. Con más de una década de experiencia, perfeccionamos el arte de las importaciones y creamos soluciones integrales para satisfacer las necesidades únicas de cada cliente. Confía en nuestro conocimiento y compromiso para lograr una experiencia de importación fluida, rentable y educativa que va más allá de lo convencional.</p>
                         </div>
                         
                     </div>
@@ -365,7 +373,7 @@
                             </div>
                         </div> -->
 
-                        <div class="col-lg-6 col-sm-6 branding-4 marketing-4 planning-4 research-4 turist-4 transfer-4" style="position: absolute; left: 255px; top: 0px;">
+                        <div class="col-lg-9 col-sm-9 branding-4 marketing-4 planning-4 research-4 turist-4 transfer-4" style="position: absolute; left: 255px; top: 0px;">
                             <div class="single-portfolio">
                                 <div class="portfolio-image">
                                     <a href="assets/images/portfolio/9.jpg" data-lightbox="portfolio" data-title="Descripción de la imagen 9">
@@ -631,6 +639,7 @@
                                         <input type="hidden" name="redirect" value="https://web3forms.com/success">
                                         <button id="sendContactMessage" type="submit" class="main-btn light-rounded-two">Enviar Mensaje</button>
                                     </div>
+                                    <p id="result"></p>
                                 </div>
                             </div>
                         </form>
@@ -765,8 +774,12 @@
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
 
-        <!-- JS LightBox -->
-        <script src="assets/js/lightbox.js"></script>
+    <!-- JS LightBox -->
+    <script src="assets/js/lightbox.js"></script>
+
+    <!-- JS Formulario Contacto -->
+    <script src="assets/js/form.js"></script>
+
     
 </body>
 

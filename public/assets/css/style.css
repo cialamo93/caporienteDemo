@@ -2588,7 +2588,7 @@ p {
 ===========================*/
 .portfolio-area {
   padding-top: 120px;
-  padding-bottom: 130px; }
+  padding-bottom: 10px; }
 
 .portfolio-menu ul li {
   font-size: 16px;
@@ -2840,7 +2840,7 @@ p {
 /*===== TESTIMONIAL STYLE THREE =====*/
 .testimonial-area {
   margin-top: 20px;
-  margin-bottom: 27rem;
+  margin-bottom: 8rem;
   background-color: #fff; }
   .testimonial-area .testimonial-left-content .sub-title {
     font-size: 18px;

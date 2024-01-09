@@ -31,7 +31,7 @@
 
                 cardFormData.transaction_amount = parseInt(document.getElementById("paymentValueInput").value);
                 
-                let paymentPending = await fetch("http://localhost:4000/process_payment", {
+                let paymentPending = await fetch("/process_payment", {
                   method: "POST",
                   headers: {
                     "Content-Type": "application/json",
@@ -89,14 +89,17 @@
       });
       
       function changeContentOnResize() {
-        var myDiv = document.getElementById('firstCarousel');
-        var screenWidth = window.innerWidth;
+        let firstCarousel = document.getElementById('firstCarousel');
+        let secondCarousel = document.getElementById('secondCarousel');
+        let screenWidth = window.innerWidth;
 
         if (screenWidth <= 768) {
-            myDiv.innerHTML = '<div class="video-container"> <video class="fullscreen-video" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el tag de video. </video> <div class="overlay-text"> <h1 style="color: white" >CAP Oriente</h1> <p style="color: white" >Tu socio estratégico en el mundo de las importaciones...</p> <a href="#aboutUs" class="main-btn rounded-one">Saber Más</a> </div> </div>';
-        }
+            firstCarousel.innerHTML = '<div class="video-container"> <video class="fullscreen-video" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el tag de video. </video> <div class="overlay-text"> <h1 style="color: white" >CAP Oriente</h1> <p style="color: white" >Tu socio estratégico en el mundo de las importaciones...</p> <a href="#aboutUs" class="main-btn rounded-one">Saber Más</a> </div> </div>';
+            secondCarousel.innerHTML = '<div class="video-container"> <video class="fullscreen-video" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el tag de video. </video> <div class="overlay-text"> <h3 style="color: white" >Próximo viaje de capacitación y negocios Abril 2024</h3> <p style="color: white" >Dubai, Shanghai, Yiwu, Cantón, Tailandia.</p> <a href="#nextTrip" class="main-btn rounded-one">Saber Más</a> </div> </div>';
+          }
         else {
-          myDiv.innerHTML = '<div class="container"> <div class="row"> <div class="col-lg-6"> <div class="slider-content"> <h1 class="title">CAP Oriente</h1> <p class="text">Tu socio estratégico en el mundo de las importaciones. Nos destacamos por simplificar el proceso de importación y ofrecer soluciones innovadoras respaldadas por una experiencia de más de 10 años en el rubro.</p> <ul class="slider-btn rounded-buttons"> <li><a class="main-btn rounded-one" href="#aboutUs">Saber Más</a></li> </ul> </div> </div> </div> </div> <div class="slider-image-box d-none d-lg-flex align-items-center"> <div class="slider-image"> <div> <video width="300" height="600" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el video. </video> </div> </div> </div>';
+          firstCarousel.innerHTML = '<div class="container"> <div class="row"> <div class="col-lg-6"> <div class="slider-content"> <h1 class="title">CAP Oriente</h1> <p class="text">Tu socio estratégico en el mundo de las importaciones. Nos destacamos por simplificar el proceso de importación y ofrecer soluciones innovadoras respaldadas por una experiencia de más de 10 años en el rubro.</p> <ul class="slider-btn rounded-buttons"> <li><a class="main-btn rounded-one" href="#aboutUs">Saber Más</a></li> </ul> </div> </div> </div> </div> <div class="slider-image-box d-none d-lg-flex align-items-center"> <div class="slider-image"> <div> <video width="300" height="600" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el video. </video> </div> </div> </div>';
+          secondCarousel.innerHTML = '<div class="container"> <div class="row"> <div class="col-lg-6"> <div class="slider-content"> <h1 class="title">Próximo viaje de capacitación y negocios Abril 2024</h1> <p class="text">Dubai, Shanghai, Yiwu, Cantón, Tailandia.</p> <ul class="slider-btn rounded-buttons"> <li><a class="main-btn rounded-one" href="#nextTrip">Saber Más</a></li> </ul> </div> </div> </div> </div> <div class="slider-image-box d-none d-lg-flex align-items-center"> <div class="slider-image" style="margin-left: 5rem;"> <div> <video width="300" height="600" autoplay muted loop playsinline> <source src="assets/images/promoVid.mp4" type="video/mp4"> Tu navegador no soporta el video. </video> </div> </div> </div>';
       }
     }
     window.onload = changeContentOnResize;
