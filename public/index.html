@@ -108,7 +108,12 @@
     <!--====== SLIDER PART START ======-->
 
     <section id="home" class="slider_area">
+        
         <div id="carouselThree" class="carousel slide" data-ride="carousel">
+            <video id="video-background" autoplay muted loop>
+                <source src="/public/assets/images/vid3.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
             <ol class="carousel-indicators">
                 <li data-target="#carouselThree" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselThree" data-slide-to="1"></li>
@@ -116,7 +121,24 @@
 
             <div class="carousel-inner">
                 
-                <div class="carousel-item active" id="firstCarousel">
+                  <!-- Contenido del carousel -->
+                  <div class="carousel-item active" id="firstCarousel">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="slider-content">
+                            <h1 class="title">CAP Oriente</h1>
+                            <p class="text">Tu socio estratégico en el mundo de las importaciones. Nos destacamos por simplificar el proceso de importación y ofrecer soluciones innovadoras respaldadas por una experiencia de más de 10 años en el rubro.</p>
+                            <ul class="slider-btn rounded-buttons">
+                              <li><a class="main-btn rounded-one" href="#aboutUs">Saber Más</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                <!-- <div class="carousel-item active" id="firstCarousel">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -140,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="carousel-item" id="secondCarousel">
                     <div class="container">
@@ -156,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-image-box d-none d-lg-flex align-items-center">
+                    <!-- <div class="slider-image-box d-none d-lg-flex align-items-center">
                         <div class="slider-image" style="margin-left: 5rem;">
                             <div>
                                 <video width="300" height="600" autoplay muted loop playsinline>
@@ -165,7 +187,7 @@
                             </video>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -194,7 +216,9 @@
                             <li></li>
                         </ul>
                         <img style="border-radius: 15px;" src="assets/images/teamPic.JPG" alt="" srcset="">
-                        <!-- <p class="text">Aca podría ir una foto, o puedo cambiar las posiciones de los elementos, o cambiar el formato. Tambien te recomiendo recortar un poco el texto de quienes somos (un poquito too much. Otsea perdoname, pero que queri que te diga...).</p> -->
+                        <div class="text-center mt-2">
+                            <button onclick="downloadPDF()" type="button" class="btn btn-primary" style="border-radius: 15px;">Descargar Brochure</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -203,7 +227,6 @@
                             <i class="lni lni-quotation"></i>
                             <p class="text">En CAP Oriente, no solo somos líderes en importaciones, sino tu socio estratégico para abrir las puertas del mercado chino. Nuestra especialidad va más allá de facilitar importaciones; nos destacamos por llevar a empresarios en viajes comerciales a China, conectándolos directamente con fabricantes y eliminando intermediarios. Con más de una década de experiencia, perfeccionamos el arte de las importaciones y creamos soluciones integrales para satisfacer las necesidades únicas de cada cliente. Confía en nuestro conocimiento y compromiso para lograr una experiencia de importación fluida, rentable y educativa que va más allá de lo convencional.</p>
                         </div>
-                        
                     </div>
                 </div>
             </div>

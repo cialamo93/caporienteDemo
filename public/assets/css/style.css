@@ -2360,7 +2360,7 @@ p {
        10.SLIDER css 
 ===========================*/
 .carousel-item {
-  background-color: #0067f4;
+  background-color: transparent;
   position: relative; }
   .carousel-item::before {
     position: absolute;
