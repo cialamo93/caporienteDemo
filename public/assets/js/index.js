@@ -106,7 +106,7 @@
     // window.onresize = changeContentOnResize;
 
     function downloadPDF() {
-      const rutaImagen = '/public/assets/images/brochure.pdf';
+      const rutaImagen = '/public/assets/images/files/brochure.pdf';
 
       const enlaceTemporal = document.createElement('a');
       enlaceTemporal.href = rutaImagen;
