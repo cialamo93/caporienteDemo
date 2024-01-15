@@ -157,3 +157,31 @@
   object-fit: cover;
   z-index: -1;
 }
+.ticker-container {
+  overflow: hidden;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.ticker-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  animation: tickerMove 30s linear infinite;
+}
+
+.ticker-list li {
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+@keyframes tickerMove {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

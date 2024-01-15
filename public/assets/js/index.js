@@ -121,4 +121,22 @@
       // Elimina el enlace temporal del DOM
       document.body.removeChild(enlaceTemporal);
     }
-        
+ async function indicators() {
+  let serverRequest = await fetch('https://mindicador.cl/api');
+  let serverResponse = await serverRequest.json(); console.log(serverResponse);
+  let codes = ['dolar', 'euro', 'imacec', 'ipc', 'uf', 'utm'];
+  // const arrayFiltrado = arrayDeObjetos.filter(a => codes.includes(a.codigo));
+
+  let data = Object.values(serverResponse).filter(a => codes.includes(a.codigo)).map(a => {
+    return {Nombre: a.codigo, Valor: a.valor}
+  });
+  const tickerList = document.getElementById('ticker-list');
+  tickerList.innerHTML = '';
+  data.forEach(dato => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${dato.Nombre.toUpperCase()}: ${dato.Valor}`;
+    tickerList.appendChild(listItem);
+  });
+
+ }
+ indicators();
