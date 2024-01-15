@@ -140,3 +140,22 @@
 
  }
  indicators();
+
+ const navbarToggler = document.querySelector('.navbar-toggler');
+ const navbarCollapse = document.querySelector('.navbar-collapse');
+ const meliReserveDiv = document.querySelector('#meliReserveDiv');
+ 
+ navbarToggler.addEventListener('click', function () {
+  if (!navbarCollapse.classList.contains('show')) {
+    meliReserveDiv.style.display = 'none'
+  }
+  else {
+    meliReserveDiv.style.display = 'block'
+  }
+  // navbarToggler.style.display = 'none'; // Ocultar el botón cuando el menú se muestra
+});
+// Agregar eventos para mostrar/ocultar el botón según el estado del menú
+navbarCollapse.addEventListener('shown.bs.collapse', function () {
+  console.log('si')
+  // navbarToggler.style.display = 'none'; // Ocultar el botón cuando el menú se muestra
+});
