@@ -106,7 +106,7 @@
     // window.onresize = changeContentOnResize;
 
     function downloadPDF() {
-      const rutaImagen = '/assets/images/files/brochure.pdf';
+      const rutaImagen = '/assets/images/files/brochure2.pdf';
 
       const enlaceTemporal = document.createElement('a');
       enlaceTemporal.href = rutaImagen;
@@ -152,10 +152,8 @@
   else {
     meliReserveDiv.style.display = 'block'
   }
-  // navbarToggler.style.display = 'none'; // Ocultar el botón cuando el menú se muestra
 });
 // Agregar eventos para mostrar/ocultar el botón según el estado del menú
-navbarCollapse.addEventListener('shown.bs.collapse', function () {
-  console.log('si')
-  // navbarToggler.style.display = 'none'; // Ocultar el botón cuando el menú se muestra
-});
+// navbarCollapse.addEventListener('shown.bs.collapse', function () {
+//   console.log('si')
+// });
