@@ -2363,7 +2363,7 @@ p {
 .carousel-item {
   background-color: transparent;
   position: relative; }
-  .carousel-item::before {
+  /* .carousel-item::before {
     position: absolute;
     content: '';
     width: 33%;
@@ -2390,7 +2390,7 @@ p {
         right: 45%; } }
     @media only screen and (min-width: 576px) and (max-width: 767px) {
       .carousel-item::before {
-        right: 25%; } }
+        right: 25%; } } */
   .carousel-item .slider-image-box {
     position: absolute;
     top: 0;
