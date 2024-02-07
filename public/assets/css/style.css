@@ -2824,7 +2824,7 @@ p {
 /*===== TESTIMONIAL STYLE THREE =====*/
 .testimonial-area {
   margin-top: 20px;
-  margin-bottom: 20rem;
+  margin-bottom: 21rem;
   background-color: #fff; }
   .testimonial-area .testimonial-left-content .sub-title {
     font-size: 18px;
@@ -2874,7 +2874,7 @@ p {
     padding-top: 50px; }
     .testimonial-area .testimonial-right-content .quota {
       position: absolute;
-      top: 10px;
+      top: -30px;
       left: 15px;
     }
       .testimonial-area .testimonial-right-content .quota i {
