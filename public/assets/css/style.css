@@ -1,21 +1,4 @@
-/*-----------------------------------------------------------------------------------
 
-    Template Name: Smash - Bootstrap Template
-    Template URI: uideck.com
-    Author: UIdeck
-    Version: 1.0
-
------------------------------------------------------------------------------------
-
-    CSS INDEX
-    ===================
-
-    01. Theme default CSS
-	02. Header
-    03. Hero
-	04. Footer
-
------------------------------------------------------------------------------------*/
 /*===========================
       01.COMMON css 
 ===========================*/
@@ -2841,7 +2824,7 @@ p {
 /*===== TESTIMONIAL STYLE THREE =====*/
 .testimonial-area {
   margin-top: 20px;
-  margin-bottom: 8rem;
+  margin-bottom: 20rem;
   background-color: #fff; }
   .testimonial-area .testimonial-left-content .sub-title {
     font-size: 18px;
