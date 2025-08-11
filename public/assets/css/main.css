@@ -194,3 +194,20 @@
 .newsCard .card {
   border: none;
 }
+
+.single-features {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.features-content {
+  margin-top: auto;
+}
+
+#services .single-features .features-content .text {
+  font-size: 18px;
+  line-height: 20px;
+  color: #121212;
+  margin-top: 0;
+}
